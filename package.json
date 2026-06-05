@@ -1,0 +1,38 @@
+{
+  "name": "arcgis-hub-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for ArcGIS Hub open data platforms - works with any city by configuring the domain",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "arcgis-hub-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx --watch src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "arcgis",
+    "hub",
+    "open-data",
+    "civic-data",
+    "government"
+  ],
+  "author": "Aaron Sachs <aaron@wyretechnology.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.2",
+    "csv-parse": "^5.5.6",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
